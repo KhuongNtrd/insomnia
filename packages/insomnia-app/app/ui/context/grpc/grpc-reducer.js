@@ -18,6 +18,8 @@ export type GrpcRequestState = {
   status?: GrpcStatusObject,
   error: ServiceError,
 };
+
+// TODO: delete from here when deleting a request
 export type GrpcState = { [requestId: string]: GrpcRequestState };
 
 const INITIAL_GRPC_REQUEST_STATE: GrpcRequestState = {
